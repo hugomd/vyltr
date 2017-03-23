@@ -1,0 +1,44 @@
+{
+  "name": "vultr-api",
+  "version": "0.0.6",
+  "description": "An API wrapper for the Vultr API",
+  "scripts": {
+    "test": "ava --verbose",
+    "posttest": "xo"
+  },
+  "engines": {
+    "node": ">=7.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugomd/travultr.git"
+  },
+  "author": {
+    "name": "Hugo Muller-Downing",
+    "email": "npmjs@hugo.sx",
+    "url": "hu.md"
+  },
+  "keywords": [
+    "vultr",
+    "api",
+    "wrapper"
+  ],
+  "xo": {
+    "space": true,
+    "rules": {
+      "camelcase": 0,
+      "promise/no-promise-in-callback": 0,
+      "array-callback-return": 0,
+      "curly": 0,
+      "unicorn/no-process-exit": 0
+    }
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hugomd/vultr-api/issues"
+  },
+  "homepage": "https://github.com/hugomd/vultr-api#readme",
+  "dependencies": {
+    "axios": "^0.15.3"
+  }
+}
