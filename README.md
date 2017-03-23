@@ -41,4 +41,3 @@ An API wrapper for the [Vultr API](https://www.vultr.com/api/).
 5. Make a Pull Request!
 
 ✌️
-```
