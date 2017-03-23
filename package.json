@@ -3,10 +3,7 @@
   "version": "0.0.1",
   "description": "An API wrapper for the Vultr API",
   "main": "index.js",
-  "scripts": {
-    "test": "ava --verbose",
-    "posttest": "xo"
-  },
+  "scripts": {},
   "engines": {
     "node": ">=7.7.1"
   },
