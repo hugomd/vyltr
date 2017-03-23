@@ -1,10 +1,10 @@
 const axios = require('axios');
 
 // Subclasses
-const OperatingSystem = require('./operating-system');
-const Plan = require('./plan');
-const Server = require('./server');
-const Region = require('./region');
+const OperatingSystem = require('./lib/operating-system');
+const Plan = require('./lib/plan');
+const Server = require('./lib/server');
+const Region = require('./lib/region');
 
 class Vultr {
   constructor(token = null) {
