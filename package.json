@@ -1,7 +1,8 @@
 {
-  "name": "vultr-api",
-  "version": "0.0.6",
+  "name": "travultr-api",
+  "version": "0.0.1",
   "description": "An API wrapper for the Vultr API",
+  "main": "index.js",
   "scripts": {
     "test": "ava --verbose",
     "posttest": "xo"
@@ -11,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hugomd/travultr.git"
+    "url": "git+https://github.com/hugomd/vultr-api.git"
   },
   "author": {
     "name": "Hugo Muller-Downing",
