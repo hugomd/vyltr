@@ -1,6 +1,6 @@
 {
   "name": "travultr-api",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An API wrapper for the Vultr API",
   "main": "index.js",
   "scripts": {},
