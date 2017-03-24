@@ -1,4 +1,4 @@
-# Vultr API Wrapper 🍬
+# Vyltr &mdash; Vultr API Wrapper 🍬
 An API wrapper for the [Vultr API](https://www.vultr.com/api/).
 
 **Note: this is a work in progress.**
