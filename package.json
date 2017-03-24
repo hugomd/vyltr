@@ -1,6 +1,6 @@
 {
   "name": "vyltr",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "An API wrapper for the Vultr API",
   "main": "index.js",
   "scripts": {},
