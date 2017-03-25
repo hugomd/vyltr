@@ -3,9 +3,7 @@ import nock from 'nock';
 import Vyltr from '../index';
 import {reply200, expected} from './fixtures/server'
 
-
 let instance;
-
 
 test.before(t => {
   instance = new Vyltr();
@@ -27,7 +25,7 @@ test('Server returns correct server object, on successful request', async t => {
 test('Test server listing functionality', async t => {
   nock('https://api.vultr.com/v1/server/list')
                     .get('')
-                    .replyWithError('shit got real');
+                    .replyWithError('Malformed response');
    try {
     const res = await instance.server.list();
     t.fail("should not succed on malformed request")
