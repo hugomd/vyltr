@@ -26,7 +26,7 @@
             </li>
         </div>
         <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
-            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/AccountModel", "classes/OperatingSystem", "classes/Plan", "classes/Region", "classes/Server", "classes/Vultr"]'>
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/AccountModel", "classes/APIKeyModel", "classes/ApplicationModel", "classes/BackupModel", "classes/BlockStorageModel", "classes/DNSModel", "classes/DNSRecordModel", "classes/FirewallGroupModel", "classes/FirewallRuleModel", "classes/ISOImageModel", "classes/OperatingSystem", "classes/OperatingSystemModel", "classes/Plan", "classes/PlanModel", "classes/Region", "classes/RegionModel", "classes/ReservedIPModel", "classes/Server", "classes/ServerModel", "classes/SnapshotModel", "classes/SSHKeyModel", "classes/StartupScriptModel", "classes/UserModel", "classes/Vultr"]'>
         </form>
     </div>
 </div>
@@ -38,10 +38,28 @@
     <div id="classes">
         <ul id="api-classes" class="nav nav-list">
                 <li><a href="../classes/AccountModel.html">AccountModel</a></li>
+                <li><a href="../classes/APIKeyModel.html">APIKeyModel</a></li>
+                <li><a href="../classes/ApplicationModel.html">ApplicationModel</a></li>
+                <li><a href="../classes/BackupModel.html">BackupModel</a></li>
+                <li><a href="../classes/BlockStorageModel.html">BlockStorageModel</a></li>
+                <li><a href="../classes/DNSModel.html">DNSModel</a></li>
+                <li><a href="../classes/DNSRecordModel.html">DNSRecordModel</a></li>
+                <li><a href="../classes/FirewallGroupModel.html">FirewallGroupModel</a></li>
+                <li><a href="../classes/FirewallRuleModel.html">FirewallRuleModel</a></li>
+                <li><a href="../classes/ISOImageModel.html">ISOImageModel</a></li>
                 <li><a href="../classes/OperatingSystem.html">OperatingSystem</a></li>
+                <li><a href="../classes/OperatingSystemModel.html">OperatingSystemModel</a></li>
                 <li><a href="../classes/Plan.html">Plan</a></li>
+                <li><a href="../classes/PlanModel.html">PlanModel</a></li>
                 <li><a href="../classes/Region.html">Region</a></li>
+                <li><a href="../classes/RegionModel.html">RegionModel</a></li>
+                <li><a href="../classes/ReservedIPModel.html">ReservedIPModel</a></li>
                 <li><a href="../classes/Server.html">Server</a></li>
+                <li><a href="../classes/ServerModel.html">ServerModel</a></li>
+                <li><a href="../classes/SnapshotModel.html">SnapshotModel</a></li>
+                <li><a href="../classes/SSHKeyModel.html">SSHKeyModel</a></li>
+                <li><a href="../classes/StartupScriptModel.html">StartupScriptModel</a></li>
+                <li><a href="../classes/UserModel.html">UserModel</a></li>
                 <li><a href="../classes/Vultr.html">Vultr</a></li>
         </ul>
     </div>
@@ -92,7 +110,17 @@ const Region = require(&#x27;./region&#x27;);
 /**
  * @class Vultr
  * @constructor Constructor
- * @param token {String} Vultr API Token
+ * @param token {String} Vultr API Token, can also be set in environment.
+ * @example
+ * &#x60;&#x60;&#x60;
+ * const Vultr = require(&#x27;vyltr&#x27;);
+ *
+ * // Pass API Token as parameter.
+ * const v = Vultr(&#x27;VULTR_API_TOKEN&#x27;);
+ *
+ * // Defaults to using process.env.VULTR_API_TOKEN
+ * const v = Vultr();
+ * &#x60;&#x60;&#x60;
  */
 class Vultr {
 
