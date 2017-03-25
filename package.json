@@ -3,7 +3,9 @@
   "version": "0.0.4",
   "description": "An API wrapper for the Vultr API",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "doc": "yuidoc -c .yuidoc.json"
+  },
   "engines": {
     "node": ">=7.7.1"
   },
