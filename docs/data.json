@@ -1,0 +1,247 @@
+{
+    "project": {
+        "name": "Vyltr",
+        "description": "A JavaScript wrapper for the Vultr API",
+        "url": "https://github.com/hugomd/vyltr",
+        "version": "0.0.4"
+    },
+    "files": {
+        "lib/models/account-model.js": {
+            "name": "lib/models/account-model.js",
+            "modules": {},
+            "classes": {
+                "AccountModel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/index.js": {
+            "name": "lib/index.js",
+            "modules": {},
+            "classes": {
+                "Vultr": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/operating-system.js": {
+            "name": "lib/operating-system.js",
+            "modules": {},
+            "classes": {
+                "OperatingSystem": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/plan.js": {
+            "name": "lib/plan.js",
+            "modules": {},
+            "classes": {
+                "Plan": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/region.js": {
+            "name": "lib/region.js",
+            "modules": {},
+            "classes": {
+                "Region": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/server.js": {
+            "name": "lib/server.js",
+            "modules": {},
+            "classes": {
+                "Server": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "AccountModel": {
+            "name": "AccountModel",
+            "shortname": "AccountModel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/models/account-model.js",
+            "line": 1,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Vultr": {
+            "name": "Vultr",
+            "shortname": "Vultr",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/index.js",
+            "line": 9,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "token",
+                    "description": "Vultr API Token",
+                    "type": "String"
+                }
+            ]
+        },
+        "OperatingSystem": {
+            "name": "OperatingSystem",
+            "shortname": "OperatingSystem",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/operating-system.js",
+            "line": 7,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "instance",
+                    "description": "Axios instance",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Plan": {
+            "name": "Plan",
+            "shortname": "Plan",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/plan.js",
+            "line": 7,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "instance",
+                    "description": "Axios instance",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Region": {
+            "name": "Region",
+            "shortname": "Region",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/region.js",
+            "line": 7,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "instance",
+                    "description": "Axios instance",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Server": {
+            "name": "Server",
+            "shortname": "Server",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/server.js",
+            "line": 9,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "instance",
+                    "description": "Axios instance",
+                    "type": "Object"
+                }
+            ]
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "lib/operating-system.js",
+            "line": 18,
+            "itemtype": "method",
+            "name": "list",
+            "return": {
+                "description": "Array of OperatingSystem Objects",
+                "type": "Array"
+            },
+            "class": "OperatingSystem"
+        },
+        {
+            "file": "lib/plan.js",
+            "line": 18,
+            "itemtype": "method",
+            "name": "list",
+            "return": {
+                "description": "Array of PlanModel Objects",
+                "type": "Array"
+            },
+            "class": "Plan"
+        },
+        {
+            "file": "lib/region.js",
+            "line": 18,
+            "itemtype": "method",
+            "name": "list",
+            "return": {
+                "description": "Array of RegionModel Objects",
+                "type": "Array"
+            },
+            "class": "Region"
+        },
+        {
+            "file": "lib/server.js",
+            "line": 20,
+            "itemtype": "method",
+            "name": "list",
+            "return": {
+                "description": "Array of ServerModel Objects",
+                "type": "Array"
+            },
+            "class": "Server"
+        },
+        {
+            "file": "lib/server.js",
+            "line": 42,
+            "itemtype": "method",
+            "name": "create",
+            "params": [
+                {
+                    "name": "body",
+                    "description": "Payload",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "SUBID  SUBID of created server",
+                "type": "String"
+            },
+            "class": "Server"
+        }
+    ],
+    "warnings": []
+}
