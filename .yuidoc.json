@@ -1,0 +1,13 @@
+{
+    "name": "Vyltr",
+    "description": "A JavaScript wrapper for the Vultr API",
+    "url": "https://github.com/hugomd/vyltr",
+    "version": "0.0.4",
+    "options": {
+        "paths": "./lib",
+        "outdir": "docs",
+        "exclude": "docs,node_modules",
+        "themedir": "node_modules/yuidoc-lucid-theme",
+        "helpers": ["node_modules/yuidoc-lucid-theme/helpers/helpers.js"]
+    }
+}

@@ -1,0 +1,754 @@
+{
+    "project": {
+        "name": "Vyltr",
+        "description": "A JavaScript wrapper for the Vultr API",
+        "url": "https://github.com/hugomd/vyltr",
+        "version": "0.0.4"
+    },
+    "files": {
+        "lib/models/account-model.js": {
+            "name": "lib/models/account-model.js",
+            "modules": {},
+            "classes": {
+                "AccountModel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/models/api-key-model.js": {
+            "name": "lib/models/api-key-model.js",
+            "modules": {},
+            "classes": {
+                "APIKeyModel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/models/application-model.js": {
+            "name": "lib/models/application-model.js",
+            "modules": {},
+            "classes": {
+                "ApplicationModel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/models/backup-model.js": {
+            "name": "lib/models/backup-model.js",
+            "modules": {},
+            "classes": {
+                "BackupModel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/models/block-storage-model.js": {
+            "name": "lib/models/block-storage-model.js",
+            "modules": {},
+            "classes": {
+                "BlockStorageModel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/models/dns-model.js": {
+            "name": "lib/models/dns-model.js",
+            "modules": {},
+            "classes": {
+                "DNSModel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/models/dns-record-model.js": {
+            "name": "lib/models/dns-record-model.js",
+            "modules": {},
+            "classes": {
+                "DNSRecordModel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/models/firewall-group-model.js": {
+            "name": "lib/models/firewall-group-model.js",
+            "modules": {},
+            "classes": {
+                "FirewallGroupModel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/models/firewall-rule-model.js": {
+            "name": "lib/models/firewall-rule-model.js",
+            "modules": {},
+            "classes": {
+                "FirewallRuleModel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/models/iso-image-model.js": {
+            "name": "lib/models/iso-image-model.js",
+            "modules": {},
+            "classes": {
+                "ISOImageModel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/models/operating-system-model.js": {
+            "name": "lib/models/operating-system-model.js",
+            "modules": {},
+            "classes": {
+                "OperatingSystemModel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/models/plan-model.js": {
+            "name": "lib/models/plan-model.js",
+            "modules": {},
+            "classes": {
+                "PlanModel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/models/region-model.js": {
+            "name": "lib/models/region-model.js",
+            "modules": {},
+            "classes": {
+                "RegionModel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/models/reserved-ip-model.js": {
+            "name": "lib/models/reserved-ip-model.js",
+            "modules": {},
+            "classes": {
+                "ReservedIPModel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/models/server-model.js": {
+            "name": "lib/models/server-model.js",
+            "modules": {},
+            "classes": {
+                "ServerModel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/models/snapshot-model.js": {
+            "name": "lib/models/snapshot-model.js",
+            "modules": {},
+            "classes": {
+                "SnapshotModel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/models/ssh-key-model.js": {
+            "name": "lib/models/ssh-key-model.js",
+            "modules": {},
+            "classes": {
+                "SSHKeyModel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/models/startup-script-model.js": {
+            "name": "lib/models/startup-script-model.js",
+            "modules": {},
+            "classes": {
+                "StartupScriptModel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/models/user-model.js": {
+            "name": "lib/models/user-model.js",
+            "modules": {},
+            "classes": {
+                "UserModel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/index.js": {
+            "name": "lib/index.js",
+            "modules": {},
+            "classes": {
+                "Vultr": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/operating-system.js": {
+            "name": "lib/operating-system.js",
+            "modules": {},
+            "classes": {
+                "OperatingSystem": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/plan.js": {
+            "name": "lib/plan.js",
+            "modules": {},
+            "classes": {
+                "Plan": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/region.js": {
+            "name": "lib/region.js",
+            "modules": {},
+            "classes": {
+                "Region": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/server.js": {
+            "name": "lib/server.js",
+            "modules": {},
+            "classes": {
+                "Server": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "AccountModel": {
+            "name": "AccountModel",
+            "shortname": "AccountModel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/models/account-model.js",
+            "line": 1,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        },
+        "APIKeyModel": {
+            "name": "APIKeyModel",
+            "shortname": "APIKeyModel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/models/api-key-model.js",
+            "line": 1,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        },
+        "ApplicationModel": {
+            "name": "ApplicationModel",
+            "shortname": "ApplicationModel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/models/application-model.js",
+            "line": 1,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        },
+        "BackupModel": {
+            "name": "BackupModel",
+            "shortname": "BackupModel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/models/backup-model.js",
+            "line": 1,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        },
+        "BlockStorageModel": {
+            "name": "BlockStorageModel",
+            "shortname": "BlockStorageModel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/models/block-storage-model.js",
+            "line": 1,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        },
+        "DNSModel": {
+            "name": "DNSModel",
+            "shortname": "DNSModel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/models/dns-model.js",
+            "line": 1,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        },
+        "DNSRecordModel": {
+            "name": "DNSRecordModel",
+            "shortname": "DNSRecordModel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/models/dns-record-model.js",
+            "line": 1,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        },
+        "FirewallGroupModel": {
+            "name": "FirewallGroupModel",
+            "shortname": "FirewallGroupModel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/models/firewall-group-model.js",
+            "line": 1,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        },
+        "FirewallRuleModel": {
+            "name": "FirewallRuleModel",
+            "shortname": "FirewallRuleModel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/models/firewall-rule-model.js",
+            "line": 1,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        },
+        "ISOImageModel": {
+            "name": "ISOImageModel",
+            "shortname": "ISOImageModel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/models/iso-image-model.js",
+            "line": 1,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        },
+        "OperatingSystemModel": {
+            "name": "OperatingSystemModel",
+            "shortname": "OperatingSystemModel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/models/operating-system-model.js",
+            "line": 1,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        },
+        "PlanModel": {
+            "name": "PlanModel",
+            "shortname": "PlanModel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/models/plan-model.js",
+            "line": 1,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        },
+        "RegionModel": {
+            "name": "RegionModel",
+            "shortname": "RegionModel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/models/region-model.js",
+            "line": 1,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        },
+        "ReservedIPModel": {
+            "name": "ReservedIPModel",
+            "shortname": "ReservedIPModel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/models/reserved-ip-model.js",
+            "line": 1,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        },
+        "ServerModel": {
+            "name": "ServerModel",
+            "shortname": "ServerModel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/models/server-model.js",
+            "line": 1,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        },
+        "SnapshotModel": {
+            "name": "SnapshotModel",
+            "shortname": "SnapshotModel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/models/snapshot-model.js",
+            "line": 1,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        },
+        "SSHKeyModel": {
+            "name": "SSHKeyModel",
+            "shortname": "SSHKeyModel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/models/ssh-key-model.js",
+            "line": 1,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        },
+        "StartupScriptModel": {
+            "name": "StartupScriptModel",
+            "shortname": "StartupScriptModel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/models/startup-script-model.js",
+            "line": 1,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        },
+        "UserModel": {
+            "name": "UserModel",
+            "shortname": "UserModel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/models/user-model.js",
+            "line": 1,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Vultr": {
+            "name": "Vultr",
+            "shortname": "Vultr",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/index.js",
+            "line": 9,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "token",
+                    "description": "Vultr API Token, can also be set in environment.",
+                    "type": "String"
+                }
+            ],
+            "example": [
+                "\n```\nconst Vultr = require('vyltr');\n\n// Pass API Token as parameter.\nconst v = Vultr('VULTR_API_TOKEN');\n\n// Defaults to using process.env.VULTR_API_TOKEN\nconst v = Vultr();\n```"
+            ]
+        },
+        "OperatingSystem": {
+            "name": "OperatingSystem",
+            "shortname": "OperatingSystem",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/operating-system.js",
+            "line": 7,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "instance",
+                    "description": "Axios instance",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Plan": {
+            "name": "Plan",
+            "shortname": "Plan",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/plan.js",
+            "line": 7,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "instance",
+                    "description": "Axios instance",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Region": {
+            "name": "Region",
+            "shortname": "Region",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/region.js",
+            "line": 7,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "instance",
+                    "description": "Axios instance",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Server": {
+            "name": "Server",
+            "shortname": "Server",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/server.js",
+            "line": 9,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "instance",
+                    "description": "Axios instance",
+                    "type": "Object"
+                }
+            ]
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "lib/operating-system.js",
+            "line": 18,
+            "itemtype": "method",
+            "name": "list",
+            "return": {
+                "description": "Array of OperatingSystem Objects",
+                "type": "Array"
+            },
+            "class": "OperatingSystem"
+        },
+        {
+            "file": "lib/plan.js",
+            "line": 18,
+            "itemtype": "method",
+            "name": "list",
+            "return": {
+                "description": "Array of PlanModel Objects",
+                "type": "Array"
+            },
+            "class": "Plan"
+        },
+        {
+            "file": "lib/region.js",
+            "line": 18,
+            "itemtype": "method",
+            "name": "list",
+            "return": {
+                "description": "Array of RegionModel Objects",
+                "type": "Array"
+            },
+            "class": "Region"
+        },
+        {
+            "file": "lib/server.js",
+            "line": 20,
+            "itemtype": "method",
+            "name": "list",
+            "return": {
+                "description": "{{#crossLink \"ServerModel\"}}{{/crossLink}} objects",
+                "type": "Array"
+            },
+            "class": "Server"
+        },
+        {
+            "file": "lib/server.js",
+            "line": 42,
+            "itemtype": "method",
+            "name": "create",
+            "params": [
+                {
+                    "name": "body",
+                    "description": "Payload",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "SUBID  SUBID of created server",
+                "type": "String"
+            },
+            "class": "Server"
+        }
+    ],
+    "warnings": []
+}

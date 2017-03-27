@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>lib/models/server-model.js - Vyltr</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/lucid.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+            Vyltr
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>0.0.4</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/AccountModel", "classes/APIKeyModel", "classes/ApplicationModel", "classes/BackupModel", "classes/BlockStorageModel", "classes/DNSModel", "classes/DNSRecordModel", "classes/FirewallGroupModel", "classes/FirewallRuleModel", "classes/ISOImageModel", "classes/OperatingSystem", "classes/OperatingSystemModel", "classes/Plan", "classes/PlanModel", "classes/Region", "classes/RegionModel", "classes/ReservedIPModel", "classes/Server", "classes/ServerModel", "classes/SnapshotModel", "classes/SSHKeyModel", "classes/StartupScriptModel", "classes/UserModel", "classes/Vultr"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+<div>
+    <div id="sidebar">
+    <div id="classes">
+        <ul id="api-classes" class="nav nav-list">
+                <li><a href="../classes/AccountModel.html">AccountModel</a></li>
+                <li><a href="../classes/APIKeyModel.html">APIKeyModel</a></li>
+                <li><a href="../classes/ApplicationModel.html">ApplicationModel</a></li>
+                <li><a href="../classes/BackupModel.html">BackupModel</a></li>
+                <li><a href="../classes/BlockStorageModel.html">BlockStorageModel</a></li>
+                <li><a href="../classes/DNSModel.html">DNSModel</a></li>
+                <li><a href="../classes/DNSRecordModel.html">DNSRecordModel</a></li>
+                <li><a href="../classes/FirewallGroupModel.html">FirewallGroupModel</a></li>
+                <li><a href="../classes/FirewallRuleModel.html">FirewallRuleModel</a></li>
+                <li><a href="../classes/ISOImageModel.html">ISOImageModel</a></li>
+                <li><a href="../classes/OperatingSystem.html">OperatingSystem</a></li>
+                <li><a href="../classes/OperatingSystemModel.html">OperatingSystemModel</a></li>
+                <li><a href="../classes/Plan.html">Plan</a></li>
+                <li><a href="../classes/PlanModel.html">PlanModel</a></li>
+                <li><a href="../classes/Region.html">Region</a></li>
+                <li><a href="../classes/RegionModel.html">RegionModel</a></li>
+                <li><a href="../classes/ReservedIPModel.html">ReservedIPModel</a></li>
+                <li><a href="../classes/Server.html">Server</a></li>
+                <li><a href="../classes/ServerModel.html">ServerModel</a></li>
+                <li><a href="../classes/SnapshotModel.html">SnapshotModel</a></li>
+                <li><a href="../classes/SSHKeyModel.html">SSHKeyModel</a></li>
+                <li><a href="../classes/StartupScriptModel.html">StartupScriptModel</a></li>
+                <li><a href="../classes/UserModel.html">UserModel</a></li>
+                <li><a href="../classes/Vultr.html">Vultr</a></li>
+        </ul>
+    </div>
+    </div>
+</div>
+        </div>
+        <div class="span9">
+    <form id="options-form" class="form-inline pull-right">
+        Show:
+        <label for="api-show-inherited" class="checkbox">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected" class="checkbox">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private" class="checkbox">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated" class="checkbox">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </form>
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<div class="page-header">
+    <h1>lib/models/server-model.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums">
+/**
+ * @class ServerModel
+ * @constructor
+ * @param data {Object}
+ */
+class ServerModel {
+  constructor(data = {}) {
+    this.SUBID = data.SUBID;
+    this.os = data.os;
+    this.ram = data.ram;
+    this.disk = data.disk;
+    this.main_ip = data.main_ip;
+    this.vcpu_count = data.vcpu_count;
+    this.location = data.location;
+    this.DCID = data.DCID;
+    this.default_password = data.default_password;
+    this.date_created = data.date_created;
+    this.pending_charges = data.pending_charges;
+    this.cost_per_month = data.cost_per_month;
+    this.current_bandwidth_gb = data.current_bandwidth_gb;
+    this.allowed_bandwidth_gb = data.allowed_bandwidth_gb;
+    this.netmask_v4 = data.netmask_v4;
+    this.gateway_v4 = data.gateway_v4;
+    this.power_status = data.power_status;
+    this.status = data.status;
+    this.server_state = data.server_state;
+    this.VPSPLANID = data.VPSPLANID;
+    this.v6_network = data.v6_network;
+    this.v6_main_ip = data.v6_main_ip;
+    this.v6_network_size = data.v6_network_size;
+    this.v6_networks = data.v6_networks;
+    this.label = data.label;
+    this.internal_ip = data.internal_ip;
+    this.kvm_url = data.kvm_url;
+    this.auto_backups = data.auto_backups;
+    this.tag = data.tag;
+    this.OSID = data.OSID;
+    this.APPID = data.APPID;
+    this.FIREWALLGROUPID = data.FIREWALLGROUPID;
+  }
+}
+
+module.exports = ServerModel;
+
+    </pre>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>
