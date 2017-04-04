@@ -25,7 +25,7 @@ test('Server returns correct server object, on successful request', async t => {
 test('Test server listing functionality', async t => {
   nock('https://api.vultr.com/v1/server/list')
                     .get('')
-                    .replyWithError('Malformed response');
+                    .replyWithError(400, 'Malformed response');
    try {
     const res = await instance.server.list();
     t.fail("should not succed on malformed request")
