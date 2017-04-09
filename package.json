@@ -4,7 +4,8 @@
   "description": "An API wrapper for the Vultr API",
   "main": "index.js",
   "scripts": {
-    "doc": "yuidoc -c .yuidoc.json"
+    "doc": "yuidoc -c .yuidoc.json",
+    "test": "NODE_ENV=test ava && xo"
   },
   "engines": {
     "node": ">=7.7.1"
@@ -25,13 +26,21 @@
   ],
   "xo": {
     "space": true,
+    "esnext": true,
     "rules": {
       "camelcase": 0,
       "promise/no-promise-in-callback": 0,
       "array-callback-return": 0,
       "curly": 0,
       "unicorn/no-process-exit": 0
-    }
+    },
+    "ignores": [
+      "test/fixtures/**",
+      "docs/**"
+    ]
+  },
+  "ava": {
+    "verbose": true
   },
   "license": "MIT",
   "bugs": {
