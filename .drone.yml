@@ -1,5 +1,5 @@
 pipeline:
-  test:
+  vyltr:
     image: node
     script:
       - yarn install
