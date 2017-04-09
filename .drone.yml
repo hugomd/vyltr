@@ -1,4 +1,6 @@
-image: node:7
-script:
-  - npm install -g yarn
-  - yarn test
+pipeline:
+  test:
+    image: node:7
+    script:
+      - npm install -g yarn
+      - yarn test
