@@ -21,7 +21,7 @@ test('should succeed in encapsulating server list into Server Objects', async t 
   }
 });
 
-test('should succeed in returning server list', async t => {
+test('should fail in returning server list', async t => {
   nock('https://api.vultr.com/v1/server/list')
     .get('')
     .replyWithError(400, 'Malformed response');
@@ -29,6 +29,32 @@ test('should succeed in returning server list', async t => {
     await instance.server.list();
     t.fail('should not succeed on malformed request');
   } catch (err) {
-    t.pass('Should throw error');
+    t.pass('should throw error');
   }
 });
+
+test('should fail in halting server', async t => {
+  nock('https://api.vultr.com/v1/server/halt')
+    .post('', 'SUBID=123')
+    .replyWithError(400);
+  try {
+    await instance.server.halt({SUBID: '123'});
+    t.fail('should not succeed on 400 bad request');
+  } catch (err) {
+    t.pass('should throw error');
+  }
+});
+
+test('should succeed in halting server', async t => {
+  nock('https://api.vultr.com/v1/server/halt')
+    .post('', 'SUBID=123')
+    .reply(200);
+  try {
+    const res = await instance.server.halt({SUBID: '123'});
+    t.is(res, null);
+  } catch (err) {
+    console.log(err);
+    t.fail('should pass');
+  }
+});
+
