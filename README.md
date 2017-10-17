@@ -1,5 +1,5 @@
 # Vyltr &mdash; Vultr API Wrapper 🍬
-[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo) [![Build Status](https://drone.ii.md/api/badges/hugomd/vyltr/status.svg)](https://drone.ii.md/hugomd/vyltr)
+[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo) [![Build Status](https://travis-ci.org/hugomd/vyltr.svg?branch=master)](https://travis-ci.org/hugomd/vyltr)
 
 An API wrapper for the [Vultr API](https://www.vultr.com/api/).
 
