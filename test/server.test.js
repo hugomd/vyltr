@@ -6,7 +6,7 @@ import {reply200, expected} from './fixtures/server';
 let instance;
 
 test.before(() => {
-  instance = new Vyltr();
+  instance = new Vyltr("abcd1234s");
 });
 
 test('should succeed in encapsulating server list into Server Objects', async t => {
